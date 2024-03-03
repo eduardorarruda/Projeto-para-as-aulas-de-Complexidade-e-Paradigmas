@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Paginal inicia N2</title>
+    <link rel="stylesheet" href="./global.css">
+</head>
+<body>
+    <nav class="opcoes">
+        <ul>
+            <li>
+                <a href="/index.html">Página Inicial</a>
+            </li>
+            <li>
+                <a href="/Complexidade/srcN1/PagInitN1.html" >Conteúdo N1</a>
+            </li>
+            <li>
+                <a href="/Complexidade/srcN2/PagInitN2.html" >Conteúdo N2</a>
+            </li>
+
+            <li>
+                <a href="/Complexidade/srcN2/gulos.html" > Algoritmo Gulos</a>
+            </li>
+
+            <li>
+                <a href="/Complexidade/srcN2/dividirConquistar.html" > Dividir para Conquistar</a>
+            </li>
+        
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle bg-black     border border-0 fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Complexidade de Problemas
+                </a>
+                
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item" href="/Complexidade/srcN2/classeP.html"> Classe P </a></li>
+                    <li><a class="dropdown-item" href="/Complexidade/srcN2/classeNp.html">Classe NP</a></li>
+                    <li><a class="dropdown-item" href="/Complexidade/srcN2/classeNpCompleto.html">Classe NP – Completo</a></li>
+                </ul>
+            </div>  
+        </ul>    
+
+</nav>
+<header>
+    <div class="center">
+        <a href="/index.html">
+            <img class="logo" src="/img/UNIALFA.png"></img>
+        </a>
+    </div>
+    <h1>Complexidade de Algoritmo</h1>
+
+</header>
+    <main>
+        <h2>Dividir para conquistar</h2>
+
+        <p>
+          Os dois algoritmos de organização que vimos até agora, seleção sort e inserção sort, têm o pior dos tempos de \( \Theta(n^2) \). Quando o tamanho da matriz de entrada é grande, esses algoritmos podem levar bastante tempo para executar. Nesse e no próximo tutorial, nós veremos outros dois algoritmos de organização, merge sort e quicksort, os quais os tempos de execução são melhores. Em particular, merge sort executará em \( \Theta(n \log n) \) de tempo todas as vezes, e o quicksort executará em \( \Theta(n \log n) \) de tempo no melhor caso em média, mesmo assim o tempo do seu pior caso é \( \Theta(n^2) \).
+        </p>
+      
+        <h2>Dividir e Conquistar</h2>
+      
+        <p>
+          Ambos merge sort e quicksort empregam um paradigma de algoritmo comum baseado na recursão. Esse paradigma, dividir-e-conquistar, quebra o problema em subproblemas que são similares ao problema original, recursivamente resolve os subproblemas, e finalmente combina as soluções para resolver o problema original. Porque dividir e conquistar resolve subproblemas recursivamente, cada subproblema deve ser menor que o problema original, e deve existir um problema base para os subproblemas. Você deve pensar o algoritmo dividir-e-conquistar como tendo três partes:
+        </p>
+      
+        <ol>
+          <li>Dividir o problema em um número de subproblemas que sejam partes menores do mesmo problema.</li>
+          <li>Conquistar os subproblemas resolvendo-os recursivamente. Se eles forem pequenos o suficiente, resolva os subproblemas como problemas base.</li>
+          <li>Combinar as soluções dos subproblemas em uma solução para o problema original.</li>
+        </ol>
+      
+    
+    </main>  
+</body>
+</html>

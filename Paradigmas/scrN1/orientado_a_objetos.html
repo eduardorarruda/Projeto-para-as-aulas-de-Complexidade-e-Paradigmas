@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Paradigma Orientado a Obejtos</title>
+    <link rel="stylesheet" href="./global.css">
+    <head>
+    <body>
+        <nav class="opcoes">
+            <ul>
+                <li>
+                    <a href="/index.html">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="/Paradigmas/scrN1/PagInitN1.html" >Conteúdo N1</a>
+                </li>
+                <li>
+                    <a href="/Paradigmas/scrN2/PagInitN2.html" >Conteúdo N2</a>
+                </li>
+    
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle bg-black     border border-0 fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Paradigma
+                    </a>
+                    
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" href="/Paradigmas/scrN1/imperativo.html">Paradigma Imperativo</a></li>
+                        <li><a class="dropdown-item" href="/Paradigmas/scrN1/estruturado.html">Paradigma Estruturado</a></li>
+                        <li><a class="dropdown-item" href="/Paradigmas/scrN1/orientado_a_objetos.html" >Paradigma Orientado a Objetos</a></li>
+                        <li><a class="dropdown-item" href="/Paradigmas/scrN1/logico.html" >Paradigma Lógico</a></li>
+                    </ul>
+                </div>
+            </ul>
+       
+        </nav>
+    
+    
+        <header>
+            <div class="center">
+                <a href="/index.html">
+                    <img class="logo" src="/img/UNIALFA.png"></img>
+                </a>
+            </div>
+            <h1>Paradigmas de Programação</h1>
+
+        </header>
+        <main>
+            <section>
+                <h3>Conceito de Paradigma Orientado a Objetos</h3>
+                <p>
+                    A programação Orientada a Objetos é baseada na composição e interação de
+                    diversas unidades de softwares denominados objetos. O funcionamento de um software
+                    orientado a objetos se dá através do relacionamento e troca de mensagens entre esses
+                    objetos. Esses objetos são classes, e nessas classes os comportamentos são chamados de
+                    métodos e os estados possíveis da classe são chamados de atributos. Nos métodos e nos
+                    atributos também são definidas as formas de relacionamento com outros objetos.
+                </p>
+            </section>
+            <div class="exemplo">
+                <section>
+                    <h3>Linguagens</h3>
+                    <p>
+                        Exemplos de linguagens de programação que baseiam-se no modelo orientado a objetos:
+                        <div>* Smalltalk;</div>
+                        <div>* Python;</div>
+                        <div>* Ruby;</div>
+                        <div>* C++;</div>
+                        <div>* Object Pascal;</div>
+                        <div>* Java;</div>
+                        <div>* C#;</div>
+                        <div>* Oberon;</div>
+                        <div>* Ada;</div>
+                        <div>* Eiffel;</div>
+                        <div>* Simula;</div>
+                        <div>* .NET;</div>
+                        
+                    </p>
+                </section>
+                <section>
+                    <h3>Aplicações</h3>
+                    <p>
+                        Exemplo:
+                        <div>package exemplo;</div>
+                        <div>public class Conta {</div>
+                        <div>&emsp;String nrDaConta;</div>
+                        <div>&emsp;String descricao;</div>
+                        <div>&emsp;double saldo;</div>
+                        <div>&emsp;double limite;</div>
+                        <div>&emsp;Cliente cliente = new Cliente();</div>
+                        <div></div>
+                        <div>&emsp;public boolean saque(double valor) {</div>
+                        <div>&emsp;&emsp;if (valor <= (saldo + limite)) {</div>
+                        <div>&emsp;&emsp;&emsp;saldo -= valor;</div>
+                        <div>&emsp;&emsp;&emsp;return true;</div>
+                        <div>&emsp;&emsp;} else {</div>
+                        <div>&emsp;&emsp;&emsp;return false;</div>
+                        <div>&emsp;&emsp;}</div>
+                        <div>&emsp;}</div>
+                        <div></div>
+                        <div>&emsp;public boolean deposita(double valor) {</div>
+                        <div>&emsp;&emsp;if (valor <= (saldo + limite)) {</div>
+                        <div>&emsp;&emsp;&emsp;saldo += valor;</div>
+                        <div>&emsp;&emsp;&emsp;return true;</div>
+                        <div>&emsp;&emsp;} else {</div>
+                        <div>&emsp;&emsp;&emsp;return false;</div>
+                        <div>&emsp;&emsp;}</div>
+                        <div>&emsp;}</div>
+                        <div></div>
+                        <div>&emsp;public boolean transfere(Conta c, double valor) {</div>
+                        <div>&emsp;&emsp;if (valor <= (saldo + limite)) {</div>
+                        <div>&emsp;&emsp;&emsp;c.saldo += valor;</div>
+                        <div>&emsp;&emsp;&emsp;saldo -= valor;</div>
+                        <div>&emsp;&emsp;&emsp;return true;</div>
+                        <div>&emsp;&emsp;} else {</div>
+                        <div>&emsp;&emsp;&emsp;return false;</div>
+                        <div>&emsp;&emsp;}</div>
+                        <div>&emsp;}</div>
+                        <div>}</div>
+
+                    </p>
+                </section>
+            </div>
+            <section>
+                <h3>Vantagens</h3>
+                <p>
+                    Esse paradigma possui todas as vantagens do paradigma imperativo entre outras:
+                    a alteração de um módulo não incorre na modificação de outros módulos; quanto mais
+                    um módulo for independente, maior a chance dele poder ser reutilizado em outra
+                    aplicação.
+                </p>
+            </section>
+            <section>
+                <h3>Desvantagens</h3>
+                <p>
+                    Por exigir formas de pensar relativamente complexas, a programação orientada a
+                    objetos até hoje ainda não é bem compreendida ou usada pela maioria.
+                </p>
+            </section>
+        </main>
+    </body>    
+    </head>

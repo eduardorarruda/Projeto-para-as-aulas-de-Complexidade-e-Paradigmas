@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Paradigma Imperativo</title>
+    <link rel="stylesheet" href="./global.css">
+    <head>
+    <body>
+        <nav class="opcoes">
+            <ul>
+                <li>
+                    <a href="/index.html">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="/Paradigmas/scrN1/PagInitN1.html" >Conteúdo N1</a>
+                </li>
+                <li>
+                    <a href="/Paradigmas/scrN2/PagInitN2.html" >Conteúdo N2</a>
+                </li>
+    
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle bg-black     border border-0 fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Paradigma
+                    </a>
+                    
+                    <ul class="dropdown-menu ">
+                        <li><a class="dropdown-item" href="/Paradigmas/scrN1/imperativo.html">Paradigma Imperativo</a></li>
+                        <li><a class="dropdown-item" href="/Paradigmas/scrN1/estruturado.html">Paradigma Estruturado</a></li>
+                        <li><a class="dropdown-item" href="/Paradigmas/scrN1/orientado_a_objetos.html" >Paradigma Orientado a Objetos</a></li>
+                        <li><a class="dropdown-item" href="/Paradigmas/scrN1/logico.html" >Paradigma Lógico</a></li>
+                    </ul>
+                </div>
+            </ul>
+       
+        </nav>
+    
+    
+        <header>
+            <div class="center">
+                <a href="/index.html">
+                    <img class="logo" src="/img/UNIALFA.png"></img>
+                </a>
+            </div>
+            <h1>Paradigmas de Programação</h1>
+
+        </header>
+
+        <main>
+            <section>
+                <h3>Conceito de Paradigma Imperativo</h3>
+                <p>
+            
+                    O Paradigma Imperativo é baseado na arquitetura de Von Neumann. É o
+                    primeiro paradigma a existir e até hoje é o dominante.
+                    Esse paradigma segue o conceito de um estado e de ações que manipulam esse
+                    estado, nele encontramos procedimentos que servem de mecanismos de estruturação.
+                    Podemos denominá-lo de procedural por incluir sub-rotinas ou procedimentos para
+                    estruturação.
+                </p>
+            </section>
+            <div class="exemplo">
+                <section>
+                    <h3>Linguagens</h3>
+                    <p>
+                        Exemplos de linguagens de programação que baseiam-se no modelo imperativo:
+                        <div>* Ada;</div>
+                        <div>* ALGOL;</div>
+                        <div>* Assembler;</div>
+                        <div>* Basic;</div>
+                        <div>* C;</div>
+                        <div>* Cobol;</div>
+                        <div>* Fortran;</div>
+                        <div>* Pascal;</div>
+                        <div>* Python;</div>
+                        <div>* Lua;</div>
+                    </p>
+                </section>
+                <section>
+                    <h3>Aplicações</h3>
+                    <p>
+                        Exemplo:
+                        <div>function fatorial (n: integer): integer;</div>
+                        <div>var fat: integer;</div>
+                        <div>begin</div>
+                        <div>&emsp;fat := 1;</div>
+                        <div>&emsp;while (n > 1) do</div>
+                        <div>&emsp;begin</div>
+                        <div>&emsp;&emsp;fat := fat * n;</div>
+                        <div>&emsp;&emsp;n := n - 1;</div>
+                        <div>&emsp;end;</div>
+                        <div>&emsp;fatorial := fat;</div>
+                        <div>end;</div>
+                    </p>
+                </section>
+            </div>
+            <section>
+                <h3>Vantagens</h3>
+                <p>
+                    As vantagens desse paradigma são: eficiência (porque embute o modelo de Von
+                    Neumann); modelagem “natural” de aplicações do mundo real; paradigma dominante e
+                    bem estabelecido; e também muito flexível.
+                </p>
+            </section>
+            <section>
+                <h3>Desvantagens</h3>
+                <p>
+                    As desvantagens são: difícil legibilidade; as instruções são centradas no como e
+                    não no o que.
+                </p>
+            </section>
+        </main>
+    </body>    
+    </head>
